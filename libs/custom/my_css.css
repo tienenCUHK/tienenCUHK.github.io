@@ -1,0 +1,356 @@
+/* ================================================================
+   Academic Personal Homepage — Custom Styles
+   Inspired by minimalist academic pages. Built on Skeleton CSS.
+   ================================================================ */
+
+/* ---- Base ---- */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 300;
+  color: #222;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 800px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+h4 {
+  font-size: 2.2rem;
+  letter-spacing: .05rem;
+  margin-bottom: 2rem;
+}
+
+b, strong {
+  font-weight: 500;
+}
+
+a {
+  color: #003366;
+  text-decoration: none;
+}
+a:hover {
+  color: #005599;
+  text-decoration: underline;
+}
+
+/* ---- Header ---- */
+.header {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.profile-pic {
+  border-radius: 4px;
+  max-width: 150px;
+}
+
+.main-description h1 {
+  font-size: 3.2rem;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
+.main-description h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.main-description p {
+  margin-bottom: 0.15rem;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+.main-description .social-icons {
+  margin-top: 10px;
+}
+
+.main-description .social-icons a {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.main-description .fa {
+  font-size: 22px;
+  color: #444;
+  transition: color 0.2s;
+}
+
+.main-description .fa:hover {
+  color: #003366;
+}
+
+.main-description .ai {
+  font-size: 22px;
+  color: #444;
+  transition: color 0.2s;
+}
+
+.main-description .ai:hover {
+  color: #003366;
+}
+
+/* ---- Navbar ---- */
+.navbar {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 0;
+  margin-bottom: 0;
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 99;
+}
+
+.navbar-list {
+  list-style: none;
+  margin-bottom: 0;
+  display: flex;
+  gap: 0;
+}
+
+.navbar-item {
+  margin-bottom: 0;
+}
+
+.navbar-link {
+  display: inline-block;
+  padding: 14px 18px 12px;
+  font-size: 1.05rem;
+  font-weight: 400;
+  letter-spacing: 0.02rem;
+  color: #555;
+  text-transform: none;
+  text-decoration: none;
+  transition: color 0.2s, border-color 0.2s;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar-link:hover {
+  color: #003366;
+  border-bottom-color: #003366;
+  text-decoration: none;
+}
+
+/* ---- Sections ---- */
+.docs-section {
+  border-top: 1px solid #eee;
+  padding: 4rem 0;
+  margin-bottom: 0;
+}
+
+.docs-section:first-of-type {
+  border-top: none;
+}
+
+/* ---- News ---- */
+.news-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.news-list li {
+  margin-bottom: 12px;
+}
+
+.news-list .row {
+  margin-bottom: 0;
+}
+
+.news-list .two.columns {
+  font-weight: 500;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.news-list .ten.columns {
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.note {
+  font-size: 0.9rem;
+  color: #888;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+/* ---- Papers ---- */
+.paper {
+  margin-bottom: 28px;
+}
+
+.paper .title {
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+.paper .title b {
+  color: #111;
+}
+
+.paper p {
+  margin-bottom: 2px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.paper .figure {
+  margin-bottom: 0;
+}
+
+.paper .figure img {
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+}
+
+.paper-buttons {
+  margin-top: 8px;
+}
+
+.paper .button {
+  display: inline-block;
+  height: 28px;
+  padding: 0 20px;
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: none;
+  color: #003366;
+  background: #f5f7fa;
+  border: 1px solid #dde;
+  border-radius: 3px;
+  letter-spacing: 0;
+  margin-right: 6px;
+  transition: all 0.2s;
+}
+
+.paper .button:hover {
+  background: #003366;
+  color: #fff;
+  border-color: #003366;
+  text-decoration: none;
+}
+
+/* ---- Button (general) ---- */
+.button {
+  color: #003366;
+  background: #f5f7fa;
+  border: 1px solid #dde;
+  border-radius: 3px;
+}
+
+.button:hover {
+  background: #003366;
+  color: #fff;
+  border-color: #003366;
+}
+
+/* ---- Blog section ---- */
+#blog .news-list a {
+  font-weight: 500;
+}
+
+/* ---- CV section ---- */
+#cv .button {
+  font-size: 1rem;
+  padding: 0 24px;
+  height: 36px;
+  line-height: 36px;
+}
+
+#cv code {
+  background: #f5f7fa;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  padding: 1px 6px;
+  font-size: 0.9rem;
+  color: #003366;
+}
+
+/* ---- Footer ---- */
+.footer {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
+  border-top: 1px solid #eee;
+  padding: 20px 0 40px 0;
+  margin-top: 0;
+  font-size: 0.85em;
+}
+
+.footer a {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.footer a:hover {
+  color: #003366;
+}
+
+/* ---- Code blocks (for blog / inline) ---- */
+code {
+  font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 550px) {
+  .header {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .profile-pic {
+    max-width: 120px;
+    margin-bottom: 20px;
+  }
+
+  .main-description h1 {
+    font-size: 2.4rem;
+  }
+
+  .main-description h2 {
+    font-size: 1.3rem;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+  }
+
+  .docs-section {
+    padding: 2.5rem 0;
+  }
+
+  .navbar-link {
+    padding: 10px 10px 8px;
+    font-size: 0.9rem;
+  }
+
+  .paper .four.columns {
+    margin-bottom: 12px;
+  }
+}
+
+/* ---- Print ---- */
+@media print {
+  .navbar {
+    position: static;
+  }
+  .docs-section {
+    page-break-inside: avoid;
+  }
+}
